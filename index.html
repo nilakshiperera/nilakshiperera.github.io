@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6bfe94be69.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <h2>NILAKSHI.</h2>
+            <ul id="sidemenu">
+                <li><a href="#header" style="--i:1;">Home</a></li>
+                <li><a href="#about" style="--i:2;">About</a></li>
+                <li><a href="#services" style="--i:3;">Services</a></li>
+                <li><a href="#portfolio" style="--i:4;">Portfolio</a></li>
+                <li><a href="#contact" style="--i:5;">Contact</a></li>
+                <i class="fa-sharp fa-solid fa-square-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>Hello, I'm<br> <span>Nilakshi Perera</span></h1>
+          <h3>Undergraduate Cyber Security Student</h3>
+        </div>
+        <div class="social-icons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+  </div> 
+  <!--------------------about-------------------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/person.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1><br>
+          <p>I am Nilakshi Perera ,an undergraduate cyber security student at SLTC. And I am an enthusiastic, self-motivated, reliable, responsible 
+            and hard working person. I am a mature team worker and adaptable to all challenging situations. 
+            I am able to work well both in a team environment as well as using own initiative. </p>
+
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experiance')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br>Web App Development</li>
+                <li><span>Database Management</span><br>Database Management</li>
+                <li><span>System Administration</span><br>Linux & Windows Administration </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experiance">
+              <ul>
+                <li><span>Student</span><br>Undergraduate Cyber Security Student at SLTC</li>
+                
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2022-Present</span><br>BSc(Hons) in Cyber Security at SLTC </li>
+                <li><span>2019-2020</span><br>Diploma in Network Engineering at NIBM</li>
+                <li><span>2018-2019</span><br>Computer Networking and Administration Course at NIBM</li>
+                <li><span>2018</span><br>G.C.E A/L Examination</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+ <!---------------------services-------------------------------------->
+
+ <div id="services">
+  <div class="container">
+    <h1 class="sub-title1">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h4>Web Design</h4><br>
+        <p>With a keen interest in HTML,CSS,Javascript and a thorough understand of a user point of view leads me to be 
+           involved in Web Development.</p><br>
+          <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-linux"></i>
+        <h4>Linux System Administration</h4><br>
+        <p>Management of peripherals and hardware in general up to the maintenance of networks and operating systems.</p><br>
+          <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-windows"></i>
+        <h4>Windows System Administration</h4><br>
+        <p>Installing, managing, and upgrading Windows-based systems and servers.And also responsible for configuring user access, 
+          and maintaining the stability of the system.</p><br>
+          <a href="#">Learn more</a>
+      </div>
+    </div>
+  </div>
+ </div>
+<!--------------------portfolio-------------------------------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title1">My Work</h1> 
+    <div class="work-list">
+      <div class="work">
+        <img src="images/img2.jpg">
+        <div class="layer">
+          <h3>Web Designing</h3>
+          <p>Web app development</p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/img4.jpg">
+        <div class="layer">
+          <h3>Database Management</h3>
+          <p>Managing database systems</p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/img3.jpg">
+        <div class="layer">
+          <h3>System Administration</h3>
+          <p>Linux & Windows administartion</p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See More</a>
+  </div>
+</div>
+<!-------------------------------contact------------------------>
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>ushaniperera027@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>0763960876</p>
+        <div class="social-icons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <a href="cv.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright <i class="fa-sharp fa-regular fa-copyright"></i> Nilakshi</p>
+    <P>This is my digital portfolio <i class="fa-regular fa-at"></i> 2023</P>
+  </div>
+</div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+    function closemenu(){
+      sidemenu.style.right = "-200px";
+    }
+
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby2TzYiMZiziHfXr1OiAARaZc3lCRrmm9PvWU943TG1kTYtH3b9nahHPYduHnnhSTilDg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
